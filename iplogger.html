@@ -1,0 +1,49 @@
+<html>
+<head>
+	<title>LMAO is this you?</title>
+	<style>
+	h1 {
+		color: blue;
+	}
+	p {
+		color: red;
+	}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>				
+	$.getJSON("https://wtfismyip.com/json", function(data) {
+		$("#ipofuser").html(data.YourFuckingIPAddress);
+	})
+	$.getJSON("https://wtfismyip.com/json", function(data) {
+		$("#location").html(data.YourFuckingLocation);
+	})
+	$.getJSON("https://wtfismyip.com/json", function(data) {
+		$("#hostname").html(data.YourFuckingHostname);
+	})
+	$.getJSON("https://wtfismyip.com/json", function(data) {
+		$("#isp").html(data.YourFuckingISP);
+	})
+	$.getJSON("https://wtfismyip.com/json", function(data) {
+		$("#city").html(data.YourFuckingCity);
+	})
+	$.getJSON("https://wtfismyip.com/json", function(data) {
+		$("#country").html(data.YourFuckingCountry);
+	})
+	$.getJSON("https://wtfismyip.com/json", function(data) {
+		$("#countrycode").html(data.YourFuckingCountryCode);
+	})
+	</script>
+</head>
+<body>
+	<center>
+		<h1>Your Info</h1>
+		<p id="ipofuser"></p>
+		<p id="location"></p>
+		<p id="hostname"></p>
+		<p id="isp"></p>
+		<p id="city"></p>
+		<p id="country"></p>
+		<p id="countrycode"></p>
+	</center>
+</body>
+</html>
