@@ -16,25 +16,25 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>				
 	$.getJSON("https://wtfismyip.com/json", function(data) {
-		$("#ipofuser").html(data.YourFuckingIPAddress);
+		$("#ipofuser").html("IP: " + data.YourFuckingIPAddress);
 	})
 	$.getJSON("https://wtfismyip.com/json", function(data) {
-		$("#location").html(data.YourFuckingLocation);
+		$("#location").html("Location: " + data.YourFuckingLocation);
 	})
 	$.getJSON("https://wtfismyip.com/json", function(data) {
-		$("#hostname").html(data.YourFuckingHostname);
+		$("#hostname").html("Hostname: " + data.YourFuckingHostname);
 	})
 	$.getJSON("https://wtfismyip.com/json", function(data) {
-		$("#isp").html(data.YourFuckingISP);
+		$("#isp").html("ISP: " + data.YourFuckingISP);
 	})
 	$.getJSON("https://wtfismyip.com/json", function(data) {
-		$("#city").html(data.YourFuckingCity);
+		$("#city").html("City: " + data.YourFuckingCity);
 	})
 	$.getJSON("https://wtfismyip.com/json", function(data) {
-		$("#country").html(data.YourFuckingCountry);
+		$("#country").html("Country: " + data.YourFuckingCountry);
 	})
 	$.getJSON("https://wtfismyip.com/json", function(data) {
-		$("#countrycode").html(data.YourFuckingCountryCode);
+		$("#countrycode").html("CountryCode: " + data.YourFuckingCountryCode);
 	})
 	</script>
 	<script>
